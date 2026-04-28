@@ -415,6 +415,15 @@ section h2 {
 }
 
 /* fayda image fix */
+.fayda-image-wrapper img {
+  max-width: 280px;   /* or any size you like */
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  display: block;
+  margin: 0 auto;
+}
+
 .egov {
   background: linear-gradient(145deg, #fef7e8, #D2D3D1);
   border-radius: 100px;
