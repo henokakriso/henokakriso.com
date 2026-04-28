@@ -434,7 +434,7 @@ section h2 {
   order: 1;
 }
 .fayda-image-wrapper img {
-  max-width: 180px;   /* small image */
+  max-width: 250px;   /* small image */
   width: 100%;
   height: auto;
   border-radius: 24px;
