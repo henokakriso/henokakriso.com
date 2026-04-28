@@ -15,13 +15,14 @@ function updateStatusBar() {
 setInterval(updateStatusBar, 5000);
 updateStatusBar();
 
-// Blog horizontal cards data (with images & links)
+// Blog data
 const blogData = [
   { date: "2025-04-25", title: "Embedded Iris Scanner Prototype", tag: "hardware", summary: "First light test of the biometric capture unit, reaching 99.6% accuracy.", icon: "fas fa-fingerprint", link: "#" },
   { date: "2025-04-18", title: "Ozayn Digital Twin Core v0.2", tag: "AI", summary: "Simulation of urban infrastructure resilience with real-time city data.", icon: "fas fa-microchip", link: "#" },
   { date: "2025-04-04", title: "Military-grade encryption module", tag: "hardware", summary: "Integration of TRNG and post-quantum cryptography.", icon: "fas fa-shield-alt", link: "#" },
   { date: "2025-03-28", title: "Facial Recognition Pipeline for Fayda", tag: "AI", summary: "Edge AI deployment on low-power ARM cores.", icon: "fas fa-face-smile", link: "#" }
 ];
+
 function renderBlogCards(filter = "all") {
   const container = document.getElementById('blogCards');
   if (!container) return;
@@ -38,6 +39,7 @@ function renderBlogCards(filter = "all") {
     </div>
   `).join('');
 }
+
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -47,16 +49,16 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 renderBlogCards('all');
 
-// Dashboard custom metrics
+// Dashboard metrics
 const startProjectDate = new Date(2026, 3, 26); // April 26 2026
 const endAllProjects = new Date(2027, 11, 31);  // Dec 31 2027
 const totalProjectDuration = endAllProjects - startProjectDate;
+
 function updateDashboard() {
   const now = new Date();
-  // No of projects updated: 8
   document.getElementById('projectCount').innerText = "8";
   
-  // Time left in current day (HH:MM:SS)
+  // Time left in current day
   const endOfDay = new Date(now);
   endOfDay.setHours(23,59,59,999);
   const diffDay = endOfDay - now;
@@ -65,14 +67,14 @@ function updateDashboard() {
   const secsLeft = Math.floor((diffDay % 60000) / 1000);
   document.getElementById('timeLeftDay').innerText = `${hoursLeft}h ${minsLeft}m ${secsLeft}s`;
   
-  // Project Accomplished Percent: days since start / total days * 100
+  // Accomplished percent
   const daysSinceStart = (now - startProjectDate) / (1000*3600*24);
   const totalDays = totalProjectDuration / (1000*3600*24);
   let percent = (daysSinceStart / totalDays) * 100;
   percent = Math.min(100, Math.max(0, percent)).toFixed(1);
   document.getElementById('accomplishedPercent').innerText = `${percent}%`;
   
-  // Total time left for all projects (weeks, days, hours, mins)
+  // Total time left for all projects
   const remaining = endAllProjects - now;
   if (remaining > 0) {
     const weeks = Math.floor(remaining / (1000*3600*24*7));
@@ -86,11 +88,7 @@ function updateDashboard() {
 setInterval(updateDashboard, 1000);
 updateDashboard();
 
-// Contact form
-const form = document.getElementById('contactForm');
-if (form) form.addEventListener('submit', (e) => { e.preventDefault(); alert('📡 Message transmitted — you will receive weekly updates.'); form.reset(); });
-
-// Smooth scroll nav
+// Smooth scroll for navigation links
 document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
