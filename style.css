@@ -134,7 +134,7 @@ body {
   50% { opacity: 0; }
 }
 
-/* hero flex with logo */
+/* hero flex with logo - FIXED IMAGE SIZE */
 .hero-flex {
   display: flex;
   align-items: center;
@@ -152,8 +152,9 @@ body {
   text-align: center;
 }
 .hero-logo img {
-  max-width: 300px;
-  width: 300%;
+  max-width: 260px;
+  width: 100%;
+  height: auto;
   border-radius: 32px;
   box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
 }
@@ -363,7 +364,7 @@ section h2 {
   text-transform: uppercase;
 }
 
-/* roadmap horizontal circuit */
+/* roadmap horizontal circuit - fixed line for small screens */
 .roadmap-horizontal {
   display: flex;
   flex-wrap: wrap;
@@ -371,15 +372,17 @@ section h2 {
   position: relative;
   margin: 3rem 0;
 }
-.roadmap-horizontal::before {
-  content: '';
-  position: absolute;
-  top: 40px;
-  left: 5%;
-  width: 90%;
-  height: 3px;
-  background: linear-gradient(90deg, #B91C1C, #e2e8f0, #B91C1C);
-  z-index: 0;
+@media (min-width: 781px) {
+  .roadmap-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    width: 90%;
+    height: 3px;
+    background: linear-gradient(90deg, #B91C1C, #e2e8f0, #B91C1C);
+    z-index: 0;
+  }
 }
 .phase-node {
   flex: 1;
@@ -411,7 +414,7 @@ section h2 {
   color: white;
 }
 
-/* fayda unchanged */
+/* fayda image fix */
 .egov {
   background: linear-gradient(145deg, #fef7e8, #D2D3D1);
   border-radius: 100px;
@@ -427,6 +430,11 @@ section h2 {
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
+}
+.fayda-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 32px;
 }
 .btn-primary {
   background: #B91C1C;
@@ -472,8 +480,9 @@ footer {
   margin-top: 2rem;
 }
 @media (max-width: 780px) {
-  .roadmap-horizontal::before { display: none; }
   .roadmap-horizontal { flex-direction: column; gap: 1rem; }
   .hero-flex { flex-direction: column; text-align: center; }
+  .hero-logo img { max-width: 200px; }
   .projects-inline { justify-content: center; }
+  .egov { border-radius: 32px; }
 }
