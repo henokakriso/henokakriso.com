@@ -442,7 +442,7 @@ section h2 {
 }
 .fayda-image-wrapper img {
   max-width: 100px;
-  width: 100%;
+  width: 20%;
   height: 50%;
   border-radius: 32px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
