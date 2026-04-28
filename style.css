@@ -414,16 +414,7 @@ section h2 {
   color: white;
 }
 
-/* fayda image fix */
-.fayda-image-wrapper img {
-  max-width: 280px;   /* or any size you like */
-  width: 100%;
-  height: auto;
-  border-radius: 32px;
-  display: block;
-  margin: 0 auto;
-}
-
+/* FAYDA SECTION: text left, image right, image small */
 .egov {
   background: linear-gradient(145deg, #fef7e8, #D2D3D1);
   border-radius: 100px;
@@ -439,11 +430,22 @@ section h2 {
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
+  justify-content: space-between;
+}
+.egov-message {
+  flex: 2;
+  text-align: left;
+}
+.fayda-image-wrapper {
+  flex: 1;
+  text-align: right;
 }
 .fayda-image-wrapper img {
-  max-width: 100%;
+  max-width: 260px;
+  width: 100%;
   height: auto;
   border-radius: 32px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 .btn-primary {
   background: #B91C1C;
@@ -488,10 +490,16 @@ footer {
   border-top: 1px solid #ecf3f9;
   margin-top: 2rem;
 }
+
+/* responsive */
 @media (max-width: 780px) {
   .roadmap-horizontal { flex-direction: column; gap: 1rem; }
   .hero-flex { flex-direction: column; text-align: center; }
   .hero-logo img { max-width: 200px; }
   .projects-inline { justify-content: center; }
   .egov { border-radius: 32px; }
+  .egov-grid { flex-direction: column; text-align: center; }
+  .egov-message { text-align: center; }
+  .fayda-image-wrapper { text-align: center; }
+  .fayda-image-wrapper img { max-width: 200px; }
 }
