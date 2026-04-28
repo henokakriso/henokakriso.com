@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Henok Akirso</title>
+  <title>Henok Akirso | Embedded Systems & Security</title>
   <!-- Google Fonts: Inter + JetBrains Mono -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -21,12 +21,13 @@
     <div class="nav-links">
       <a href="#home">Portfolio</a>
       <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
+      <!-- Contact link removed as requested, Gmail icon added below -->
       <div class="social-nav">
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
         <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:henok@example.com" title="Gmail"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </div>
@@ -34,7 +35,7 @@
 
 <main>
   <div class="container">
-    <!-- Live Terminal Status Bar (white bg, red/black text) -->
+    <!-- Live Terminal Status Bar -->
     <div class="status-bar-light" id="liveStatusBar">
       <div class="status-item-light"><span class="status-label-light">⟫ WEEK</span><span class="status-value-light" id="weekNum">--</span></div>
       <div class="status-item-light"><span class="status-label-light">⟫ ALTAR</span><span class="status-value-light" id="altarStatus">OFFLINE</span></div>
@@ -43,11 +44,11 @@
       <div class="status-item-light"><span class="cursor-blink-light">█</span></div>
     </div>
 
-    <!-- Hero Section with logo image on right -->
+    <!-- Hero Section -->
     <section id="home" class="hero hero-flex">
       <div class="hero-content">
         <h1>HENOK AKRISO</h1>
-        <div class="hero-sub"><span id="dynamicDegree">A Computer Scientist </span></div>
+        <div class="hero-sub"><span id="dynamicDegree">A Computer Scientist</span></div>
         <div class="quote">“A free system builder from a free nation”</div>
         <div class="tagline">Building Ethiopia's Digital Sovereignty, One Friday at a Time.</div>
       </div>
@@ -56,24 +57,22 @@
       </div>
     </section>
 
-    <!-- About: Embedded & Security focus (bigger font) -->
+    <!-- About Section -->
     <section>
-  <h2>// about the architect</h2>
+      <h2>// ABOUT THE ARCHITECT</h2>
+      <div class="about-card">
+        <p class="about-text">
+          <strong>Henok Akirso</strong> is an Embedded Systems and Security Engineer with a strong foundation in Computer Science (BSc, Ambo University), focused on designing intelligent, secure, and scalable digital infrastructures. His work lies at the intersection of low-level systems, cybersecurity, and AI-driven architecture, with hands-on experience in C, Python, and embedded hardware systems. He approaches engineering with a deep emphasis on precision, reliability, and system-level thinking, where every solution is built not just to function, but to endure and evolve over time.
+        </p>
+        <p class="about-text" style="margin-top: 1rem;">
+          Driven by a long-term vision of technological transformation in Africa, his ambition extends beyond software development into shaping foundational digital systems that can support governance, security, and innovation at scale. Inspired by discipline, structure, and forward-thinking design, he aims to contribute to the emergence of a new generation of African tech leadership—one that builds its own systems, defines its own standards, and creates globally competitive technologies from within the continent. His focus remains on building resilient, intelligent infrastructure that reflects both technical excellence and a future-oriented vision for Africa’s digital evolution.
+        </p>
+      </div>
+    </section>
 
-  <div class="about-card">
-    <p class="about-text">
-      <strong>Henok Akirso</strong> is an Embedded Systems and Security Engineer with a strong foundation in Computer Science (BSc, Ambo University), focused on designing intelligent, secure, and scalable digital infrastructures. His work lies at the intersection of low-level systems, cybersecurity, and AI-driven architecture, with hands-on experience in C, Python, and embedded hardware systems. He approaches engineering with a deep emphasis on precision, reliability, and system-level thinking, where every solution is built not just to function, but to endure and evolve over time.
-    </p>
-
-    <p class="about-text" style="margin-top: 1rem;">
-      Driven by a long-term vision of technological transformation in Africa, his ambition extends beyond software development into shaping foundational digital systems that can support governance, security, and innovation at scale. Inspired by discipline, structure, and forward-thinking design, he aims to contribute to the emergence of a new generation of African tech leadership—one that builds its own systems, defines its own standards, and creates globally competitive technologies from within the continent. His focus remains on building resilient, intelligent infrastructure that reflects both technical excellence and a future-oriented vision for Africa’s digital evolution.
-    </p>
-  </div>
-</section>
-
-    <!-- Core Pillars (4 cards, no active links) -->
+    <!-- Core Pillars -->
     <section>
-      <h2>// core pillars</h2>
+      <h2>// CORE PILLARS</h2>
       <div class="pillars-grid">
         <div class="pillar-card"><div class="pillar-icon"><i class="fas fa-microchip"></i></div><h3>Arwe Core</h3><p>Embedded security core & hardware root of trust.</p></div>
         <div class="pillar-card"><div class="pillar-icon"><i class="fas fa-landmark"></i></div><h3>Locify DOGE</h3><p>Digital land registry + sovereign identity layer.</p></div>
@@ -82,9 +81,8 @@
       </div>
     </section>
 
-    <!-- Projects Section (8 cards, one line, no alert) -->
+    <!-- Projects Section (icons black) -->
     <section>
-     
       <div class="projects-inline" id="projectsGrid">
         <div class="project-mini"><i class="fas fa-brain"></i><span>Govyx</span></div>
         <div class="project-mini"><i class="fas fa-graduation-cap"></i><span>Edunex</span></div>
@@ -97,9 +95,9 @@
       </div>
     </section>
 
-    <!-- Weekly Log (Blog) - Horizontal cards -->
+    <!-- Weekly Log (Blog) -->
     <section id="blog">
-      <h2>Blogs </h2>
+      <h2>BLOGS</h2>
       <div class="blog-filters">
         <button class="filter-btn active" data-tag="all">All</button>
         <button class="filter-btn" data-tag="hardware">Hardware</button>
@@ -109,9 +107,9 @@
       <div class="blog-cards" id="blogCards"></div>
     </section>
 
-    <!-- Live Metrics Dashboard (custom calculations) -->
+    <!-- Live Metrics Dashboard -->
     <section>
-      <h2>// live metrics dashboard</h2>
+      <h2>// LIVE METRICS DASHBOARD</h2>
       <div class="dashboard-custom" id="dashboardCustom">
         <div class="metric"><div class="metric-value" id="projectCount">8</div><div class="metric-label">No of Projects updated</div></div>
         <div class="metric"><div class="metric-value" id="timeLeftDay">--</div><div class="metric-label">Time left in day (HH:MM:SS)</div></div>
@@ -120,9 +118,9 @@
       </div>
     </section>
 
-    <!-- Strategic Roadmap: horizontal circuit line -->
+    <!-- Strategic Roadmap -->
     <section>
-      <h2>// strategic roadmap</h2>
+      <h2>// STRATEGIC ROADMAP</h2>
       <div class="roadmap-horizontal">
         <div class="phase-node" data-phase="1">
           <div class="phase-icon">🔹</div>
@@ -148,7 +146,7 @@
       </div>
     </section>
 
-    <!-- FAYDA Registration Section (unchanged) -->
+    <!-- FAYDA Registration: image left (small) + text right -->
     <section id="egov" class="egov">
       <div>
         <h2 class="section-title">
@@ -156,6 +154,9 @@
           <span class="sub-title">FAYDA your Key to a Digital Ethiopia</span>
         </h2>
         <div class="egov-grid">
+          <div class="fayda-image-wrapper">
+            <img src="fayda.jpg" alt="Fayda National ID Sample">
+          </div>
           <div class="egov-message">
             <h3>How to Register:</h3>
             <ul class="registration-steps">
@@ -164,37 +165,24 @@
               <li><i class="fas fa-check-circle" style="color:#B91C1C;"></i> Complete your biometric capture (Fingerprints & Iris scan).</li>
             </ul>
             <p style="margin-top: 2rem;">
-              <a href="https://id.gov.et/" target="_blank" class="btn-primary" style="display: inline-block; text-decoration: none;">Go to Fayda Portal <i class="fas fa-external-link-alt"></i></a>
+              <a href="https://id.gov.et/" target="_blank" class="btn-primary">Go to Fayda Portal <i class="fas fa-external-link-alt"></i></a>
             </p>
-          </div>
-          <div class="fayda-image-wrapper">
-            <img src="fayda.jpg" alt="Fayda ID">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact & Newsletter (social links already in footer and nav) -->
-    <section id="contact">
-      <h2>Contact & community</h2>
-      <div class="contact-form">
-        <form id="contactForm">
-          <div class="input-group"><input type="text" placeholder="Full name" required id="contactName"></div>
-          <div class="input-group"><input type="email" placeholder="Email address" required id="contactEmail"></div>
-          <div class="input-group"><textarea rows="3" placeholder="Your message / interest in weekly newsletter"></textarea></div>
-          <button type="submit" class="btn-primary">Subscribe / Send Message</button>
-        </form>
-        <p style="text-align:center; margin-top:1rem;">📧 Weekly updates straight to your inbox</p>
-      </div>
-    </section>
+    <!-- Contact section REMOVED as requested -->
+
     <footer>
       <div class="footer-social">
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
         <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:henok@example.com" title="Gmail"><i class="fas fa-envelope"></i></a>
       </div>
-      <p>© 2026 Henok Akirso — Embedded Systems & Digital Sovereignty. All systems nominal.</p>
+      <p>© 2026 Henok Akirso — C character copyright reserved.</p>
     </footer>
   </div>
 </main>
