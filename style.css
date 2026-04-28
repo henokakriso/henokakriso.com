@@ -501,5 +501,5 @@ footer {
   .egov-grid { flex-direction: column; text-align: center; }
   .egov-message { text-align: center; }
   .fayda-image-wrapper { text-align: center; }
-  .fayda-image-wrapper img { max-width: 200px; }
+  .fayda-image-wrapper img { max-width: 100px; }
 }
