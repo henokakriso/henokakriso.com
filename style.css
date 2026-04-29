@@ -37,7 +37,7 @@ body {
 .navbar {
   background: #D2D3D1;
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #000000;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -224,7 +224,7 @@ section h2 {
 }
 .pillar-card:hover {
   transform: translateY(-6px);
-  border-color: #B91C1C;
+  border-color: #000000;
 }
 .pillar-icon {
   font-size: 2.5rem;
@@ -391,7 +391,7 @@ section h2 {
   border: 1px solid #D2D3D1;
   position: relative;
   z-index: 2;
-  background: rgba(255,255,255,0.9);
+  background: #D2D3D1;
 }
 .current-blink {
   background: #22c55e;
@@ -408,7 +408,7 @@ section h2 {
 }
 .phase-node[data-phase="1"] .phase-status {
   background: #D2D3D1;
-  color: white;
+  color: #D2D3D1;
 }
 
 /* FAYDA section – side by side: image left small, text right */
