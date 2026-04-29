@@ -152,7 +152,7 @@ body {
   text-align: center;
 }
 .hero-logo img {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   border-radius: 32px;
   box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
@@ -228,7 +228,7 @@ section h2 {
 }
 .pillar-icon {
   font-size: 2.5rem;
-  color: #B91C1C;
+  color: #000000;
 }
 .pillar-card h3 {
   font-size: 1.6rem;
@@ -253,7 +253,7 @@ section h2 {
   border-radius: 20px;
   padding: 1rem 0.5rem;
   text-align: center;
-  border: 1px solid #ffe0e0;
+  border: 1px solid #000000;
   transition: 0.2s;
   cursor: default;
 }
@@ -314,7 +314,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  color: #B91C1C;
+  color: #000000;
 }
 .blog-card-content {
   padding: 1rem;
@@ -383,19 +383,19 @@ section h2 {
 }
 .phase-node {
   flex: 1;
-  background: white;
+  background: #D2D3D1;
   border-radius: 28px;
   padding: 1.2rem;
   margin: 0 0.5rem;
   text-align: center;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #D2D3D1;
   position: relative;
   z-index: 2;
   background: rgba(255,255,255,0.9);
 }
 .current-blink {
   background: #22c55e;
-  color: white;
+  color: #B91C1C;
   padding: 0.2rem 0.5rem;
   border-radius: 40px;
   font-size: 0.7rem;
@@ -404,10 +404,10 @@ section h2 {
 }
 @keyframes blinkGreen {
   0%, 100% { opacity: 1; background: #22c55e; }
-  50% { opacity: 0.5; background: #15803d; }
+  50% { opacity: 0.5; background: #B91C1C; }
 }
 .phase-node[data-phase="1"] .phase-status {
-  background: #22c55e;
+  background: #D2D3D1;
   color: white;
 }
 
