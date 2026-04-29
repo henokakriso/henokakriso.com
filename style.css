@@ -56,7 +56,7 @@ body {
   gap: 0.75rem;
 }
 .logo-icon {
-  background: #B91C1C;
+  background: #5e0b0b;
   width: 40px;
   height: 40px;
   border-radius: 12px;
@@ -73,7 +73,7 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: #B91C1C;
+  color: #5e0b0b;
 }
 .nav-links {
   display: flex;
@@ -88,7 +88,7 @@ body {
   transition: 0.2s;
 }
 .nav-links a:hover {
-  color: #B91C1C;
+  color: #5e0b0b;
 }
 .social-nav {
   display: flex;
@@ -160,7 +160,7 @@ body {
 .hero h1 {
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 800;
-  color: #B91C1C;
+  color: #5e0b0b;
   letter-spacing: -0.02em;
 }
 .hero-sub {
@@ -176,7 +176,7 @@ body {
   padding: 0.3rem 1rem;
   border-radius: 40px;
   margin-top: 1rem;
-  border-left: 4px solid #B91C1C;
+  border-left: 6px solid #5e0b0b;
 }
 .tagline {
   margin-top: 1.5rem;
@@ -202,9 +202,9 @@ body {
 section h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #B91C1C;
+  color: #5e0b0b;
   margin: 2rem 0 1.5rem;
-  border-left: 5px solid #B91C1C;
+  border-left: 5px solid #5e0b0b;
   padding-left: 1rem;
 }
 
@@ -285,7 +285,7 @@ section h2 {
   cursor: pointer;
 }
 .filter-btn.active, .filter-btn:hover {
-  background: #B91C1C;
+  background: #5e0b0b;
   color: white;
 }
 .blog-cards {
@@ -338,7 +338,7 @@ section h2 {
 .blog-link {
   display: inline-block;
   margin-top: 0.8rem;
-  color: #B91C1C;
+  color: #5e0b0b;
   font-weight: 600;
   text-decoration: none;
 }
@@ -356,7 +356,7 @@ section h2 {
 .metric-value {
   font-size: 2rem;
   font-weight: 800;
-  color: #B91C1C;
+  color: #5e0b0b;
 }
 .metric-label {
   font-size: 0.8rem;
@@ -395,7 +395,7 @@ section h2 {
 }
 .current-blink {
   background: #22c55e;
-  color: #B91C1C;
+  color: #5e0b0b;
   padding: 0.2rem 0.5rem;
   border-radius: 40px;
   font-size: 0.7rem;
@@ -446,7 +446,7 @@ section h2 {
   order: 2;
 }
 .btn-primary {
-  background: #B91C1C;
+  background: #5e0b0b;
   border: none;
   padding: 0.8rem 2rem;
   border-radius: 40px;
@@ -477,7 +477,7 @@ section h2 {
   transition: 0.2s;
 }
 .footer-social a:hover {
-  color: #B91C1C;
+  color: #5e0b0b;
 }
 footer {
   text-align: center;
