@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERGIO | Embedded Systems & Security</title>
+<meta name="description" content="SERGIO - Embedded Systems and Security Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loading-screen">
+  <div class="loading-content">
+    <div class="loading-ring">
+      <div class="loading-ring-circle"></div>
+      <div class="loading-ring-glow"></div>
+      <img src="logo.png" alt="" class="loading-ring-logo">
+    </div>
+    <div class="loading-text">
+      <span class="loading-title">HENOK AKRISO</span>
+      <span class="loading-subtitle">INITIALIZING SYSTEM...</span>
+      <div class="loading-terminal">
+        <span class="term-line" id="termLine"></span>
+        <span class="loading-status" id="loadingStatus"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cursor-glow"></div>
+<div id="cursor-dot"></div>
+
+<nav id="main-nav">
+  <div class="nav-container">
+    <div class="nav-menu" id="nav-menu">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#roadmap" class="nav-link">Roadmap</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#hero" class="nav-logo">Henok Akriso</a>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-scroll-bar" id="nav-scroll-bar"></div>
+</nav>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="section-full">
+  <div class="hero-bg-slideshow" id="heroSlideshow"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="cyber-grid" id="cyber-grid"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-subtitle-line">#DIGITALETHIOPIA2030</div>
+    <h1 class="hero-title">
+      <span class="hl">S</span><span class="hl">E</span><span class="hl">R</span><span class="hl">G</span><span class="hl">I</span><span class="hl">O</span>
+    </h1>
+    <div class="hero-typed-container">
+      <span class="hero-typed-text" id="typed-text"></span><span class="hero-typed-cursor">|</span>
+    </div>
+    <div class="hero-quote">"A free system builder from a free nation"</div>
+
+  </div>
+  <div class="scroll-indicator">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section-scroll section-bg" style="background-image:url('assets/henokakriso-bg-1.jpg')">
+  <div class="page-container">
+    <div class="section-header scroll-reveal">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-left scroll-reveal">
+        <div class="about-portrait-ring">
+          <div class="about-portrait">
+            <img src="henok.png" alt="SERGIO" onerror="this.style.display='none'">
+          </div>
+          <div class="ring-1"></div>
+          <div class="ring-2"></div>
+        </div>
+        <div class="social-links about-social">
+          <a href="https://github.com/henokakriso/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/henokakriso" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://t.me/enochsergio" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a>
+          <a href="mailto:henokaregaa@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="about-right scroll-reveal">
+        <p class="about-intro">Meet <strong>HENOK AREGA AKRISO</strong>   in the programming world, I go by <strong>SERGIO</strong> (<em>"served"</em> in Italian). I am 28 years old, born and raised in Ethiopia. I hold a BSc in Computer Science from Ambo University. I currently teach Language and Mathematics at a Pre-Highschool level while building the future as Founder & CEO of <a href="https://halziz.com" target="_blank" style="color:var(--silver);text-decoration:underline;text-underline-offset:3px;">Halziz</a>   a company that crafts digital systems for everyone. I have been near technology and deeply passionate about it since I was in grade 3. My passion lives in drones, IoT systems and low-level engineering. <strong>C</strong> is my language of choice   countless projects, endless possibilities.</p>
+        <div class="about-skills">
+          <div class="skill"><span class="skill-name">C / Embedded</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          <div class="skill"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          <div class="skill"><span class="skill-name">Cybersecurity</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+          <div class="skill"><span class="skill-name">AI / ML</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item"><span class="stat-number" data-count="8">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat-item"><span class="stat-number" data-count="4">0</span><span class="stat-label">Pillars</span></div>
+          <div class="stat-item"><span class="stat-number" data-count="100">0</span><span class="stat-label">Commitment %</span></div>
+          <div class="stat-item"><span class="stat-number" data-count="6">0</span><span class="stat-label">years</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section-scroll section-bg" style="background-image:url('assets/henokakriso-tech-4.jpeg')">
+  <div class="page-container">
+    <div class="section-header scroll-reveal">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card scroll-reveal" data-project="govyx">
+        <div class="project-icon-wrap"><i class="fas fa-brain"></i></div>
+        <h3>Govyx</h3>
+        <p>AI governance framework</p>
+        <div class="project-hover-info">
+          <span>AI governance framework for digital infrastructure. Built with Python, TensorFlow, and React.</span>
+          <span class="project-tech">Python · TF · React</span>
+        </div>
+      </div>
+      <div class="project-card scroll-reveal" data-project="edunex">
+        <div class="project-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Edunex</h3>
+        <p>Educational network</p>
+        <div class="project-hover-info">
+          <span>Sovereign learning platform connecting students across Ethiopia.</span>
+          <span class="project-tech">Node · MongoDB · Flutter</span>
+        </div>
+      </div>
+      <div class="project-card scroll-reveal" data-project="terrachain">
+        <div class="project-icon-wrap"><i class="fas fa-link"></i></div>
+        <h3>TerraChain</h3>
+        <p>Blockchain registry</p>
+        <div class="project-hover-info">
+          <span>Blockchain-based land registry ensuring immutable property rights.</span>
+          <span class="project-tech">Solidity · Web3 · Rust</span>
+        </div>
+      </div>
+      <div class="project-card scroll-reveal" data-project="locify">
+        <div class="project-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Locify</h3>
+        <p>Digital identity layer</p>
+        <div class="project-hover-info">
+          <span>Sovereign digital identity registry for Ethiopian citizens.</span>
+          <span class="project-tech">Go · Postgres · React</span>
+        </div>
+      </div>
+      <div class="project-card scroll-reveal" data-project="bilen">
+        <div class="project-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+        <h3>Bilen</h3>
+        <p>Cybersecurity suite</p>
+        <div class="project-hover-info">
+          <span>Cybersecurity framework for national defense infrastructure.</span>
+          <span class="project-tech">C · Rust · Python</span>
+        </div>
+      </div>
+      <div class="project-card scroll-reveal" data-project="kidane">
+        <div class="project-icon-wrap"><i class="fas fa-drone"></i></div>
+        <h3>Kidane</h3>
+        <p>Drone surveillance</p>
+        <div class="project-hover-info">
+          <span>Autonomous drone surveillance with real-time threat detection.</span>
+          <span class="project-tech">C++ · OpenCV · ROS</span>
+        </div>
+      </div>
+      <div class="project-card scroll-reveal" data-project="ozyn">
+        <div class="project-icon-wrap"><i class="fas fa-cubes"></i></div>
+        <h3>Ozyn</h3>
+        <p>Infrastructure twin</p>
+        <div class="project-hover-info">
+          <span>Digital twin platform for critical infrastructure simulation.</span>
+          <span class="project-tech">Three.js · Python · AWS</span>
+        </div>
+      </div>
+      <div class="project-card scroll-reveal" data-project="canivox">
+        <div class="project-icon-wrap"><i class="fas fa-robot"></i></div>
+        <h3>Canivox</h3>
+        <p>Voice AI assistant</p>
+        <div class="project-hover-info">
+          <span>Voice-controlled AI assistant for smart infrastructure management.</span>
+          <span class="project-tech">Python · NLP · Flutter</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROADMAP ===== -->
+<section id="roadmap" class="section-scroll section-bg" style="background-image:url('assets/henokakriso-dev.jpg')">
+  <div class="page-container">
+    <div class="section-header scroll-reveal">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Roadmap</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="roadmap-timeline">
+      <div class="roadmap-track"></div>
+      <div class="roadmap-item scroll-reveal" data-phase="1">
+        <div class="rm-dot active"></div>
+        <div class="rm-content">
+          <span class="rm-year">2025 Q2</span>
+          <h3>Foundation</h3>
+          <p>Embedded security core, biometric pilots</p>
+          <span class="rm-tag current">Current</span>
+        </div>
+      </div>
+      <div class="roadmap-item scroll-reveal" data-phase="2">
+        <div class="rm-dot"></div>
+        <div class="rm-content">
+          <span class="rm-year">2025 Q4</span>
+          <h3>Pilot</h3>
+          <p>Locify digital identity rollout</p>
+        </div>
+      </div>
+      <div class="roadmap-item scroll-reveal" data-phase="3">
+        <div class="rm-dot"></div>
+        <div class="rm-content">
+          <span class="rm-year">2026</span>
+          <h3>Scale</h3>
+          <p>National identity integration</p>
+        </div>
+      </div>
+      <div class="roadmap-item scroll-reveal" data-phase="4">
+        <div class="rm-dot"></div>
+        <div class="rm-content">
+          <span class="rm-year">2027</span>
+          <h3>Sovereignty</h3>
+          <p>Complete AI governance mesh</p>
+        </div>
+      </div>
+    </div>
+    <div class="roadmap-board scroll-reveal">
+      <div class="roadmap-stat">
+        <span class="roadmap-stat-label">Countdown to July 28, 2028</span>
+        <div class="cd-grid" id="cdGrid">
+          <div class="cd-unit"><span class="cd-digit" id="cdDays">00</span><span class="cd-label">Days</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-digit" id="cdHours">00</span><span class="cd-label">Hours</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-digit" id="cdMins">00</span><span class="cd-label">Mins</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-digit" id="cdSecs">00</span><span class="cd-label">Secs</span></div>
+        </div>
+      </div>
+      <div class="roadmap-stat">
+        <span class="roadmap-stat-label">Projects Accomplished</span>
+        <div class="led-display" id="ledDisplay">
+          <div class="led-digits" id="ledDigits">
+            <span class="led-digit">0</span><span class="led-digit">0</span><span class="led-digit">0</span>
+          </div>
+          <div class="led-bar-track"><div class="led-bar-fill" id="ledBarFill"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-scroll section-bg" style="background-image:url('assets/henokakriso-tech-6.jpeg')">
+  <div class="page-container">
+    <div class="section-header scroll-reveal">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-panel scroll-reveal">
+        <h3>Send Transmission</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="form-name" required>
+            <label for="form-name">Name</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" required>
+            <label for="form-email">Email</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="form-subject" required>
+            <label for="form-subject">Subject</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" required></textarea>
+            <label for="form-message">Message</label>
+            <span class="form-line"></span>
+          </div>
+          <button type="submit" class="btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <div class="info-card scroll-reveal">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/henokakriso/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/henokakriso" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://t.me/enochsergio" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a>
+            <a href="mailto:henokaregaa@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="info-card scroll-reveal">
+          <h4>Status</h4>
+          <div class="status-list">
+            <div class="status-item"><span class="status-dot active"></span> Available</div>
+            <div class="status-item"><span class="status-dot"></span> Building in public</div>
+            <div class="status-item"><span class="status-dot active"></span> Open to collab</div>
+          </div>
+        </div>
+        <div class="info-card scroll-reveal">
+          <h4>Location</h4>
+          <p class="info-text">Nifas Silk Lafto, Addis Abeba</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="main-footer">
+  <div class="footer-container">
+    <div class="footer-bottom">
+      <span>All Projects Are Open Source</span>
+      <span>&copy; 2026 SERGIO</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
